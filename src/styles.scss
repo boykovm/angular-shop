@@ -8,6 +8,8 @@ $color-1-d: #D1D1D1;
 $color-1-e: #EBEBEB;
 $color-1-f: #F5F5F5;
 $color-1-h: #F9F9F9;
+$color-1-j: #FFFFFF;
+$color-1-i: #FDFDFD;
 
 $color-2-a: #6A983C;
 $color-2-b: #46760A;
@@ -85,4 +87,90 @@ $caption: (
   'font-weight': '400'
 );
 
+body {
+  a {
+    text-decoration: none;
 
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  background-color: $color-1-d;
+
+  div {
+    background-color: $color-1-j;
+  }
+
+  h1 {
+    font-size: $scale-1;
+  }
+
+  h2 {
+    font-size: $scale-2;
+  }
+
+  h3 {
+    font-size: $scale-3;
+  }
+
+  h4 {
+    font-size: $scale-4;
+  }
+
+  h5 {
+    font-size: $scale-5;
+  }
+
+  h6 {
+    font-size: $scale-6;
+  }
+
+  footer {
+    background-color: $color-1-j;
+
+    .footer-head {
+      color: $color-1-a;
+      font-family: map.get($button, button-default);
+    }
+
+    a {
+      &:hover {
+        color: $color-2-a;
+      }
+    }
+
+    a {
+      color: $color-2-a;
+      font-size: 14px;
+    }
+
+    .product-tags {
+      h4 {
+        font-family: map.get($button, button-default);
+      }
+
+      a {
+        font-size: $scale-6;
+        font-weight: 600;
+        color: $color-1-a;
+        background-color: $color-1-f;
+        padding: 4px 10px;
+        border-radius: 10px;
+        text-align: center;
+        display: block;
+        float: left;
+
+      }
+    }
+
+    .copyright {
+      h5 {
+        font-family: map.get($headline, font-family);
+        font-weight: 400;
+      }
+    }
+  }
+
+
+}
