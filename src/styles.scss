@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+
+// colors variables
+$color-1-a: #151515;
+$color-1-b: #575757;
+$color-1-c: #A9A9A9;
+$color-1-d: #D1D1D1;
+$color-1-e: #EBEBEB;
+$color-1-f: #F5F5F5;
+$color-1-h: #F9F9F9;
+
+$color-2-a: #6A983C;
+$color-2-b: #46760A;
+$color-2-c: #92C064;
+$color-2-d: #C8DEB3;
+$color-2-e: #F4F8EC;
+
+$color-3-a: #D0A866;
+$color-3-b: #B28A48;
+$color-3-c: #ECD2A6;
+$color-3-d: #FAEDD8;
+$color-3-e: #FFF9F0;
+
+$color-4-a: #E5704B;
+$color-4-b: #C7522D;
+$color-4-c: #EB8D70;
+$color-4-d: #F7C6B7;
+$color-4-e: #FFF1ED;
+
+$color-5-a: #37D0D6;
+$color-5-b: #19B2B8;
+$color-5-c: #7CD0D3;
+$color-5-d: #B9E6E8;
+$color-5-e: #ECF6F6;
+
+//font variables
+
+//$map: (
+//  key: value;
+//  other-key: other-value;
+//);
+//
+//.ellement{
+//  propert: map-get($map, key)
+//}
+
+$default-font: 'Poppins', sans-serif;
+$default-font-weight: 600;
+
+$scale-1: 32px;
+$scale-2: 26px;
+$scale-3: 22px;
+$scale-4: 18px;
+$scale-5: 15px;
+$scale-6: 12px;
+
+$underline: underline;
+
+$headline: (
+  'font-family': ('Open Sans', sans-serif),
+  'font-size': '12px'
+);
+
+$button: (
+  'button-default': ('Poppins', sans-serif),
+  'font-size': '15px',
+  'font-weight': 'bold'
+);
+
+$lead: (
+  'lead-default': ('Open Sans', sans-serif),
+  'font-size': '17px',
+  'font-weight': 400,
+);
+
+$body: (
+  'body-default': ('Open Sans', sans-serif),
+  'font-size': '14px',
+  'font-weight': '400'
+);
+
+$caption: (
+  'caption-default': ('Open Sans', 'sans-serif'),
+  'font-size': '12px',
+  'font-weight': '400'
+);
+
+
