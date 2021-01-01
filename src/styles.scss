@@ -60,34 +60,36 @@ $underline: underline;
 
 $headline: (
   'font-family': ('Open Sans', sans-serif),
-  'font-size': '12px'
+  'font-size': 12px
 );
 
 $button: (
   'button-default': ('Poppins', sans-serif),
-  'font-size': '15px',
-  'font-weight': 'bold'
+  'font-size': 15px,
+  'font-weight': bold
 );
 
 $lead: (
   'lead-default': ('Open Sans', sans-serif),
-  'font-size': '17px',
+  'font-size': 17px,
   'font-weight': 400,
 );
 
 $body: (
   'body-default': ('Open Sans', sans-serif),
-  'font-size': '14px',
-  'font-weight': '400'
+  'font-size': 14px,
+  'font-weight': 400
 );
 
 $caption: (
-  'caption-default': ('Open Sans', 'sans-serif'),
-  'font-size': '12px',
-  'font-weight': '400'
+  'font-family': ('Open Sans', 'sans-serif'),
+  'font-size': 12px,
+  'font-weight': 400
 );
 
 body {
+  background-color: $color-1-d;
+
   a {
     text-decoration: none;
 
@@ -95,8 +97,6 @@ body {
       text-decoration: none;
     }
   }
-
-  background-color: $color-1-d;
 
   div {
     background-color: $color-1-j;
@@ -126,51 +126,123 @@ body {
     font-size: $scale-6;
   }
 
-  footer {
-    background-color: $color-1-j;
-
-    .footer-head {
-      color: $color-1-a;
-      font-family: map.get($button, button-default);
-    }
-
-    a {
-      &:hover {
-        color: $color-2-a;
-      }
-    }
-
-    a {
-      color: $color-2-a;
-      font-size: 14px;
-    }
-
-    .product-tags {
-      h4 {
-        font-family: map.get($button, button-default);
-      }
-
+  header {
+    .to-contact {
       a {
-        font-size: $scale-6;
-        font-weight: 600;
         color: $color-1-a;
-        background-color: $color-1-f;
-        padding: 4px 10px;
-        border-radius: 10px;
-        text-align: center;
-        display: block;
-        float: left;
+        font-family: map.get($caption, font-family);
+        font-size: map.get($caption, font-size);
+        font-weight: map.get($caption, font-weight);
 
+        &:first-child {
+          color: $color-2-a;
+        }
       }
     }
 
-    .copyright {
-      h5 {
-        font-family: map.get($headline, font-family);
-        font-weight: 400;
+    .shop-header {
+      background-color: $color-1-j;
+
+      .logo {
+        img {
+          height: 18px;
+        }
+      }
+
+      .search {
+        border-radius: 12px;
+        //border: 1px solid $color-1-d;
+
+        .drop-down {
+          button {
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            border-left: 1px solid $color-1-d;
+            border-top: 1px solid $color-1-d;
+            border-bottom: 1px solid $color-1-d;
+
+            font-family: map.get($button, button-default);
+            font-size:  map.get($button, font-size);
+            font-weight: map.get($button, font-weight);
+
+            &:after {
+              content: url("./assets/images/icons/ic-chevron-down.svg");
+              color: $color-2-a;
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              float: right;
+
+              margin-left: 8px;
+              margin-top: -10px;
+              border: 0px;
+        }
       }
     }
   }
+
+  .user-cart {
+    img {
+      width: 24px;
+    }
+  }
+}
+
+.about-company {
+  a {
+    color: $color-2-a;
+    font-family: map.get($caption, font-family);
+    font-size: map.get($caption, font-size);
+    font-weight: map.get($caption, font-weight);
+  }
+}
+}
+
+footer {
+background-color: $color-1-j;
+
+.footer-head {
+  color: $color-1-a;
+  font-family: map.get($button, button-default);
+}
+
+a {
+  &:hover {
+    color: $color-2-a;
+  }
+}
+
+a {
+  color: $color-2-a;
+  font-size: 14px;
+}
+
+.product-tags {
+  h4 {
+    font-family: map.get($button, button-default);
+  }
+
+  a {
+    font-size: $scale-6;
+    font-weight: 600;
+    color: $color-1-a;
+    background-color: $color-1-f;
+    padding: 4px 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    float: left;
+
+  }
+}
+
+.copyright {
+  h5 {
+    font-family: map.get($headline, font-family);
+    font-weight: 400;
+  }
+}
+}
 
 
 }

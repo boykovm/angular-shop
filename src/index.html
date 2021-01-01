@@ -15,7 +15,62 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-  <app-root></app-root>
+  <header>
+    <div class="main-contacts container d-flex flex-row justify-content-between pt-3 pb-3 border-bottom">
+      <div class="to-contact d-flex flex-row">
+        <a href="/" class="mr-4 pr-1">Chat with us</a>
+        <a href="/" class="mr-4 pr-1">+420 336 775 664</a>
+        <a href="/" class="mr-4 pr-1">info@freshnesecom.com</a>
+      </div>
+
+      <div class="about-company d-flex flex-row ">
+        <a href="/" class="ml-4 pl-1">Blog</a>
+        <a href="/" class="ml-4 pl-1">About Us</a>
+        <a href="/" class="ml-4 pl-1">Careers</a>
+      </div>
+    </div>
+
+    <div class="container shop-header pt-3 pb-3 pr-0 pl-0">
+      <div class="container-fluid mt-4 mb-4 d-flex flex-row justify-content-between pl-0 pr-0 py-1">
+
+        <div class="logo col-3">
+          <a href="/" class="logo d-block">
+            <img src="./assets/images/icons/Freshnesecom.svg" alt="Freshnesecom">
+          </a>
+        </div>
+<!--there-->
+        <div class="col-6 d-flex flex-row flex-start">
+          <div class="input-group search">
+            <div class="input-group-prepend drop-down">
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+            <input type="text" class="form-control pt-1 pb-1 border-0" aria-label="Text input with dropdown button">
+            <div class="input-group-append">
+              <button class="btn" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-cart col-1 d-flex flex-row justify-content-between">
+          <a href="/" class="d-block"><img src="./assets/images/icons/ic-actions-user.svg" alt="Account"></a>
+          <a href="/" class="d-block"><img src="./assets/images/icons/ic-ecommerce-basket.svg" alt="Cart"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="container">
+    <app-root></app-root>
+  </div>
 
   <footer class="container container-fluid d-flex flex-column pt-5">
     <div class="container-fluid d-flex flex-row pt-3">
@@ -80,5 +135,8 @@
       <h5>Copyright © 2020 My angular app</h5>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
