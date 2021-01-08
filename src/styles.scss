@@ -1,5 +1,6 @@
 @use "sass:map";
 
+// foundation/_colors.scss
 // colors variables
 $color-1-a: #151515;
 $color-1-b: #575757;
@@ -48,6 +49,7 @@ $color-5-e: #ECF6F6;
 
 $default-font: 'Poppins', sans-serif;
 $default-font-weight: 600;
+$default-font-size: 14px;
 
 $scale-1: 32px;
 $scale-2: 26px;
@@ -151,35 +153,45 @@ body {
 
       .search {
         border-radius: 12px;
-        //border: 1px solid $color-1-d;
+        border: 1px solid $color-1-c;
+        font-family: map.get($button, button-default);
+        font-size: map.get($button, font-size);
+        font-weight: map.get($button, font-weight);
 
-        .drop-down {
-          button {
-            border-top-left-radius: 12px;
-            border-bottom-left-radius: 12px;
-            border-left: 1px solid $color-1-d;
-            border-top: 1px solid $color-1-d;
-            border-bottom: 1px solid $color-1-d;
+        &div{
+          background-color: $color-1-d;
+        }
 
-            font-family: map.get($button, button-default);
-            font-size:  map.get($button, font-size);
-            font-weight: map.get($button, font-weight);
+        button.dropdown-toggle {
+          &:after {
+            border-top-color: $color-2-a;
+            border-bottom-color: $color-2-a;
+          }
+        }
 
-            &:after {
-              content: url("./assets/images/icons/ic-chevron-down.svg");
-              color: $color-2-a;
-              display: inline-block;
+        div.drop-down {
+          background: none;
+          border: none;
+
+        }
+
+        div.input-group-append {
+          background: none;
+          border: none;
+        }
+
+        .input-group-append {
+          button.btn {
+            img {
+              //padding: 13px 13px;
               width: 16px;
               height: 16px;
-              float: right;
-
-              margin-left: 8px;
-              margin-top: -10px;
-              border: 0px;
+              margin-top: auto;
+              fill: $color-1-a;
+            }
+          }
         }
       }
-    }
-  }
 
   .user-cart {
     img {
@@ -187,6 +199,27 @@ body {
     }
   }
 }
+
+    .header-menu {
+      .dropdown {
+
+        &:first-child {
+          margin-left: 0 !important;
+        }
+
+        a {
+          font-size: $scale-5;
+          font-weight: $default-font-weight;
+          color: $color-1-a;
+          font-family: $default-font;
+
+          &:after {
+            border-top-color: $color-2-a;
+            border-bottom-color: $color-2-a;
+          }
+        }
+      }
+    }
 
 .about-company {
   a {
@@ -197,6 +230,10 @@ body {
   }
 }
 }
+
+  app-root {
+    background-color: $color-1-d;
+  }
 
 footer {
 background-color: $color-1-j;

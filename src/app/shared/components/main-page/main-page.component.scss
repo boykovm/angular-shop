@@ -1,0 +1,122 @@
+@import "../../../../styles";
+
+.review {
+  .header {
+    h4 {
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+      color: $color-1-a;
+      display: inline-block;
+      margin: auto 0;
+    }
+
+    button {
+      font-family: map-get($button, button-default);
+      font-size: map-get($button, font-size);
+      font-weight: map-get($button, font-weight);
+
+      &:after {
+        content: ' ';
+        margin-left: 6px;
+
+        background-color: $color-2-a;
+        -webkit-mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+        mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+        mask-size: 100% 100%;
+        background-size: 16px 16px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -3px;
+      }
+    }
+  }
+
+  .review-offset {
+    .buttons-on-component {
+      z-index: 1010;
+      position: sticky;
+      height: 228px;
+      width: 100%;
+      background: none;
+      top: 50%;
+
+      .first-button {
+        background: linear-gradient(90deg, $color-1-j 0%, rgba(255, 255, 255, 0) 100%);
+        background-opacity: 0.7;
+
+        a {
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 12px;
+
+          &:after {
+            content: ' ';
+
+            background-color: $color-1-j;
+            -webkit-mask-image: url("/assets/images/icons/ic-chevron-left.svg");
+            mask-image: url("/assets/images/icons/ic-chevron-left.svg");
+            mask-size: 100% 100%;
+            background-size: 48px 48px;
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: -3px;
+          }
+        }
+      }
+
+      .second-button {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $color-1-j 100%);
+        background-opacity: 0.7;
+
+        a {
+          border-top-left-radius: 12px;
+          border-bottom-left-radius: 12px;
+
+          &:after {
+            content: ' ';
+
+            background-color: $color-1-j;
+            -webkit-mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+            mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+            mask-size: 100% 100%;
+            background-size: 48px 48px;
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: -3px;
+          }
+        }
+      }
+
+      .first-button, .second-button {
+        height: 100%;
+        //background: none;
+
+        a {
+          height: 48px;
+          width: 48px;
+          margin-top: 125%;
+          //margin: auto 0;
+          background: $color-1-a;
+
+        }
+      }
+    }
+
+    .reviews {
+      overflow: hidden;
+      margin-top: -224px;
+
+      app-review:nth-child(1){
+        margin-left: -156px;
+      }
+    }
+  }
+}

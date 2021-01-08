@@ -1,0 +1,207 @@
+@import "../../../../styles";
+
+.photos {
+  .product-image {
+    border-radius: 12px;
+    background: $color-1-h;
+    width: 539px;
+    height: 436px;
+
+    &.first-image {
+      .discount {
+        background: none;
+        position: relative;
+        top: 16px;
+        left: 16px;
+
+        h6 {
+          color: $color-2-a;
+          background: $color-2-e;
+          padding: 4px 10px;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
+
+.product-info {
+  .short-info {
+    .product-name {
+
+      h1 {
+        color: $color-1-a;
+      }
+
+      .short-review {
+        .stars {
+          img {
+            width: 16px;
+            height: 16px;
+          }
+
+          a {
+            text-decoration: $underline;
+            color: $color-1-c;
+            font-size: map-get($caption, font-size);
+            font-weight: map-get($caption, font-weight);
+            font-family: map-get($caption, font-family);
+
+            &:before {
+              content: '(';
+              text-decoration: none;
+            }
+
+            &:after {
+              content: ')';
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .product-short-description {
+      p {
+        color: $color-1-a;
+        font-size: map-get($lead, font-size);
+        font-family: map-get($lead, lead-default);
+        font-weight: map-get($lead, font-weight);
+      }
+    }
+
+    .delivery-info {
+      .delivery-subcategory {
+        p {
+          color: $color-1-c;
+          font-family: map-get($body, body-default);
+          font-weight: map-get($body, font-weight);
+          font-size: map-get($body, font-size);
+        }
+      }
+
+      .delivery-subinfo {
+        p {
+          color: $color-1-a;
+          font-family: map-get($body, body-default);
+          font-weight: map-get($body, font-weight);
+          font-size: map-get($body, font-size);
+        }
+
+        &.delivery-category {
+          p {
+            text-decoration: $underline;
+          }
+        }
+
+        &.delivery-stock {
+          p {
+            text-decoration: $underline;
+            color: $color-2-a;
+          }
+        }
+      }
+    }
+
+    .buying {
+      border-radius: 12px;
+      border: 1px solid $color-1-f;
+
+      .price {
+        h2 {
+          color: $color-2-a;
+        }
+
+        h6 {
+          color: $color-1-c;
+          text-decoration: line-through;
+        }
+      }
+
+      .add-to-cart {
+        .package-type {
+          padding: 12px 16px;
+          border-radius: 12px;
+          border: 1px solid $color-1-d;
+          background: $color-1-h;
+
+          label {
+            //line-height: 1px;
+            border-right: 1px solid $color-1-d;
+            color: $color-1-d;
+          }
+
+          select {
+            border: none;
+            background: none;
+            font-family: $default-font;
+            font-weight: $default-font-weight;
+            font-size: $scale-6;
+            color: $color-1-a;
+          }
+        }
+
+        button {
+          background: $color-2-a;
+          border: 1px solid $color-2-b;
+          padding: 12px 16px;
+          border-radius: 12px;
+          font-family: map-get($button, button-default);
+          font-size: map-get($button, font-size);
+          font-weight: map-get($button, font-weight);
+          color: $color-1-j;
+        }
+      }
+    }
+
+    .to-wishlist {
+      button {
+        padding: 6px 12px;
+        color: $color-1-a;
+        font-family: map-get($button, button-default);
+        font-size: map-get($button, font-size);
+        font-weight: map-get($button, font-weight);
+      }
+    }
+  }
+
+  .full-info {
+//there
+  }
+}
+
+.related-products {
+  .head-line {
+    h4 {
+      color: $color-1-a;
+    }
+
+    a {
+      color: $color-1-a;
+      font-family: map-get($button, button-default);
+      font-size: map-get($button, font-size);
+      font-weight: map-get($button, font-weight);
+      padding: 6px 12px;
+      &:after {
+        content: " ";
+
+        background-color: $color-2-a;
+        -webkit-mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+        mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+        mask-size: 100% 100%;
+
+        //background-image: url("/assets/images/icons/ic-chevron-right.svg");
+        background-size: 16px 16px;
+        display: inline-block;
+        margin-left: 6px;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -3px;
+      }
+    }
+  }
+}
+
+

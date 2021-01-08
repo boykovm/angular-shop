@@ -1,0 +1,93 @@
+@import "../../../../styles";
+
+.category {
+  h4 {
+    color: $color-1-a;
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+  }
+
+  h6 {
+    background: $color-2-e;
+    color: $color-2-a;
+    padding: 0 8px;
+    border-radius: 12px;
+    margin: auto 0;
+  }
+
+  .form-check {
+    .form-check-input {
+      border: 1.5px solid $color-1-c;
+      border-radius: 3px;
+      box-sizing: border-box;
+      width: 24px;
+      height: 24px;
+    }
+
+    label {
+      font-size: $default-font;
+      font-width: $default-font-weight;
+      color: $color-1-a;
+      margin: 0 auto;
+    }
+  }
+
+  &.stars {
+    .form-check {
+      img {
+        height: 24px;
+        width: 24px;
+        path {
+          fill: $color-2-a;
+        }
+      }
+
+      svg {
+        fill: $color-2-a;
+        background: $color-2-b;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+.price-settings {
+  .price {
+    h6 {
+      color: $color-1-c;
+      margin: auto 0;
+    }
+
+    .min-price h6, .max-price h6 {
+      color: $color-1-a;
+    }
+  }
+
+  .buttons {
+    button {
+      font-family: map-get($button, button-default);
+      font-weight: map-get($button, font-weight);
+      font-size: map-get($button, font-size);
+
+      &.apply {
+        background: $color-2-a;
+        border-radius: 12px;
+        border: 2px solid $color-2-b;
+        color: $color-1-j;
+      }
+
+      &.reset {
+        color: $color-1-c;
+        padding: 6px 12px;
+        margin-left: 34px;
+      }
+    }
+  }
+}
+
+
+
+
+
+

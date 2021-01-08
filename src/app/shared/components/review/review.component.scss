@@ -1,0 +1,35 @@
+@import "../../../../styles";
+
+.main-card{
+  max-width: 369px;
+  min-width: 369px;
+
+  .review-card{
+    display: inline-block;
+    background: $color-1-j;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+
+    .review {
+      h5 {
+        max-width: 305px;
+        color: $color-1-a;
+        font-family: $default-font;
+        font-width: $default-font-weight;
+      }
+
+      h6 {
+        color: $color-1-c;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .reviewer-img {
+    margin: -24px auto 0 auto;
+    max-width: 48px;
+    max-height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+  }
+}

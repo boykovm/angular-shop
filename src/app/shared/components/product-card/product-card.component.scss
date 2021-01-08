@@ -1,0 +1,62 @@
+@import "../../../../styles";
+
+.product-card {
+  border: 1px solid $color-1-d;
+  background-color: $color-1-j;
+  border-radius: 12px;
+
+  .product-image {
+    width: 237px;
+    height: 180px;
+    background-color: $color-1-h;
+    border-radius: 12px;
+
+    .discount {
+      display: inline-block;
+      background: $color-2-e;
+      color: $color-2-a;
+      border-radius: 8px;
+      padding: 0 8px;
+      position: relative;
+      z-index: 1010;
+      top: 12px;
+      left: 12px;
+    }
+  }
+
+  .product-short-description {
+    .short-description {
+      a {
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+        color: $color-1-a;
+      }
+
+      h6 {
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+        color: $color-1-b;
+      }
+    }
+
+    .price {
+      h4 {
+        margin: auto 0;
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+      }
+
+      button {
+        border: 2px solid $color-2-b;
+        background: $color-2-a;
+        color: $color-1-j;
+        padding: 5px 10px;
+        border-radius: 12px;
+
+        font-family: map-get($button, button-default);
+        font-size: map-get($button, font-size);
+        font-weight: map-get($button, font-weight);
+      }
+    }
+  }
+}

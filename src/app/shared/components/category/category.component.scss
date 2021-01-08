@@ -1,0 +1,185 @@
+@import "../../../../styles";
+
+.category-name {
+  h1 {
+    color: $color-1-a;
+    font-weight: $default-font-weight;
+    font-family: $default-font;
+  }
+
+  .view-info {
+    a {
+      font-family: map-get($caption, font-family);
+      font-size: map-get($caption, font-size);
+      font-weight: map-get($caption, font-weight);
+      color: $color-1-c;
+
+      &.grid-view {
+        &:before {
+          content: ' ';
+
+          background-color: $color-1-c;
+          -webkit-mask-image: url("/assets/images/icons/ic-layout-square-grid.svg");
+          mask-image: url("/assets/images/icons/ic-layout-square-grid.svg");
+          mask-size: 100% 100%;
+          background-size: 16px 16px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-bottom: -3px;
+        }
+      }
+
+      &.list-view {
+        &:before {
+          content: ' ';
+
+          background-color: $color-1-c;
+          -webkit-mask-image: url("/assets/images/icons/ic-layout-sections.svg");
+          mask-image: url("/assets/images/icons/ic-layout-sections.svg");
+          mask-size: 100% 100%;
+          background-size: 16px 16px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-bottom: -3px;
+        }
+      }
+
+      &.product-count {
+        h6 {
+          padding-right: 8px;
+          padding-left: 8px;
+          border-radius: 12px;
+          background-color: $color-2-e;
+          margin: auto 0;
+          color: $color-2-a;
+        }
+      }
+
+      &.active-view {
+        color: $color-1-a;
+
+        &:before {
+          background-color: $color-2-a;
+        }
+      }
+    }
+  }
+}
+
+.filters {
+  .active-filters {
+    .input-group-sm {
+      p {
+        font-family: map-get($body, font-family);
+        font-weight: map-get($body, font-weight);
+        font-size: map-get($body, font-size);
+        display: inline-block;
+        //margin: auto 0 auto 0;
+      }
+
+      h6 {
+        display: inline-block;
+        color: $color-1-a;
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+        margin: 0 8px;
+        border: 1px solid $color-1-e;
+        border-radius: 12px;
+      }
+    }
+
+  }
+
+  .applied-filters {
+    h6 {
+      color: $color-1-c;
+      font-weight: $default-font-weight;
+      font-family: $default-font;
+    }
+
+    div {
+      h6 {
+        color: $color-2-a;
+        background: $color-2-d;
+        padding: 0 8px;
+        border-radius: 12px;
+
+        &:after {
+          content: ' ';
+
+          background-color: $color-2-e;
+          -webkit-mask-image: url("/assets/images/icons/ic-actions-close-simple.svg");
+          mask-image: url("/assets/images/icons/ic-actions-close-simple.svg");
+          mask-size: 100% 100%;
+          background-size: 12px 12px;
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-bottom: -3px;
+        }
+      }
+    }
+  }
+}
+
+.pages {
+  .current-page {
+    p {
+      font-family: map-get($caption, font-family);
+      font-weight: map-get($caption, font-weight);
+      font-size: map-get($caption, font-size);
+      color: $color-1-c;
+    }
+
+    a {
+      font-family: map-get($caption, font-family);
+      font-weight: map-get($caption, font-weight);
+      font-size: map-get($caption, font-size);
+      color: $color-1-a;
+
+      &.active {
+        color: $color-2-a;
+      }
+    }
+  }
+
+  .show-more {
+    button {
+      padding: 12px 16px;
+      background: $color-2-a;
+      border: 2px solid $color-2-b;
+      border-radius: 12px;
+      color: $color-1-j;
+      font-family: map-get($button, button-default);
+      font-weight: map-get($button, font-weight);
+      font-size: map-get($button, font-size);
+    }
+  }
+
+  .products-count {
+    h6 {
+      color: $color-2-a;
+      background: $color-2-e;
+      border-radius: 12px;
+      padding: 0 8px;
+    }
+
+    p {
+      font-family: map-get($caption, font-family);
+      font-weight: map-get($caption, font-weight);
+      font-size: map-get($caption, font-size);
+      color: $color-1-c;
+    }
+  }
+}
+
+
+

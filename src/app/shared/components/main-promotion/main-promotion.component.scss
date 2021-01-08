@@ -1,0 +1,43 @@
+@import "../../../../styles";
+
+.main-promotion-banner {
+  border-radius: 12px;
+  background: url("/assets/images/empty-images/promotion-background.png");
+  background-position: center;
+  background-color: rgba(244, 248, 236, 0.5);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  div {
+    background: none;
+  }
+
+  a {
+    border: 2px $color-2-c solid;
+    border-radius: 12px;
+    background: none;
+    color: $color-1-a;
+    font-family: map-get($button, font-family);
+    font-size: map-get($button, font-size);
+    font-weight: map-get($button, font-weight);
+
+    &:after {
+      content: " ";
+
+      background-color: $color-2-a;
+      -webkit-mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+      mask-image: url("/assets/images/icons/ic-chevron-right.svg");
+      mask-size: 100% 100%;
+
+      //background-image: url("/assets/images/icons/ic-chevron-right.svg");
+      background-size: 16px 16px;
+      display: inline-block;
+      margin-left: 16px;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: -3px;
+    }
+  }
+}
