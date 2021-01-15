@@ -1,0 +1,231 @@
+<div class="container mt-n5">
+    <app-path-to-page></app-path-to-page>
+</div>
+
+<div class="container-fluid px-0">
+  <div class="container d-flex flex-row">
+    <div class="col-7 pl-0 billing">
+      <div class="container-fluid d-flex flex-column mb-5 px-0 step-1">
+        <div class="head-line d-flex flex-column mb-4">
+          <h3 class="mb-1">
+            Billing info
+          </h3>
+
+          <div class="subtitle d-flex flex-row justify-content-between">
+            <p class="mb-0">Please enter your billing info</p>
+            <p class="mb-0">Step 1 of 5</p>
+          </div>
+        </div>
+
+        <div class="main-information mb-4 d-flex flex-column step-1">
+          <div class="row mb-4 ">
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">First name</h6>
+              <input type="text" placeholder="First name" class="py-1 px-2">
+            </div>
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">Last name</h6>
+              <input type="text" placeholder="Last name" class="py-1 px-2">
+            </div>
+          </div>
+
+          <div class="row mb-4 ">
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">Email address</h6>
+              <input type="text" placeholder="Email address" class="py-1 px-2">
+            </div>
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">Phone number</h6>
+              <input type="text" placeholder="Phone number" class="py-1 px-2">
+            </div>
+          </div>
+
+          <div class="row mb-4 ">
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">Address</h6>
+              <input type="text" placeholder="Address" class="py-1 px-2">
+            </div>
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">Town / City</h6>
+              <input type="text" placeholder="Town or city" class="py-1 px-2">
+            </div>
+          </div>
+
+          <div class="row mb-4 ">
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">State / Country</h6>
+              <input type="text" placeholder="Choose a state or Country" class="py-1 px-2">
+            </div>
+            <div class="col d-flex flex-column">
+              <h6 class="mb-0">ZIP/Postal code</h6>
+              <input type="text" placeholder="Postal code or ZIP" class="py-1 px-2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid d-flex flex-column mb-5 px-0 pt-1 step-2">
+        <div class="head-line d-flex flex-column mb-4">
+          <h3 class="mb-1">
+            Billing method
+          </h3>
+
+          <div class="subtitle d-flex flex-row justify-content-between">
+            <p class="mb-0">Please enter your payment method</p>
+            <p class="mb-0">Step 2 of 5</p>
+          </div>
+        </div>
+
+<!--        toggle-->
+        <div class="deliver-information mb-4 d-flex flex-column step-2">
+          <div class="form-check fedex px-3 py-2 d-flex flex-row justify-content-between">
+              <input class="form-check-input ml-n2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label ml-1" for="exampleRadios1">
+                FedEx
+              </label>
+          </div>
+          <div class="form-check">
+            <div class="dhl">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Second default radio
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid d-flex flex-column mb-5 px-0 pt-1 step-3">
+        <div class="head-line d-flex flex-column mb-4">
+          <h3 class="mb-1">
+            Payment method
+          </h3>
+
+          <div class="subtitle d-flex flex-row justify-content-between">
+            <p class="mb-0">Please enter your payment method</p>
+            <p class="mb-0">Step 3 of 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid d-flex flex-column mb-5 px-0 pt-1 step-4">
+        <div class="head-line d-flex flex-column mb-4">
+          <h3 class="mb-1">
+            Additional informations
+          </h3>
+
+          <div class="subtitle d-flex flex-row justify-content-between">
+            <p class="mb-0">Need something else? We will make it for you!</p>
+            <p class="mb-0">Step 4 of 5</p>
+          </div>
+        </div>
+
+        <div class="form-group order-notes">
+          <h6>Order-notes</h6>
+          <textarea class="form-control px-2 pu-1" id="exampleFormControlTextarea1" rows="5" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+        </div>
+      </div>
+
+      <div class="container-fluid d-flex flex-column px-0 pt-1 step-5">
+        <div class="head-line d-flex flex-column mb-4">
+          <h3 class="mb-1">
+            Confirmation
+          </h3>
+
+          <div class="subtitle d-flex flex-row justify-content-between">
+            <p class="mb-0">We are getting to the end. Just few clicks and your order si ready!</p>
+            <p class="mb-0">Step 5 of 5</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column check-agree mb-4">
+          <div class="form-check mb-3 px-3 py-2 d-flex flex-row align-items-center">
+            <input type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label ml-1" for="exampleRadios1">
+              I agree with sending an Marketing and newsletter emails. No spam, promissed!
+            </label>
+          </div>
+          <div class="form-check px-3 py-2 d-flex flex-row align-items-center">
+            <input type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label ml-1" for="exampleRadios2">
+              I agree with our <a href="#">terms and conditions</a> and <a href="#">privacy policy</a>.
+            </label>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <button class="btn px-4 py-3 mb-4">Complete order</button>
+
+          <div class="safe d-flex flex-column">
+            <img src="./assets/images/icons/ic-security-safety.svg" class="mb-1">
+
+            <h6>All your data are safe</h6>
+            <p>We are using the most advanced security to provide you the best experience ever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-5 pr-0 d-flex flex-column">
+      <div class="py-4 px-3 basket">
+        <div class="head-line d-flex flex-column mb-4">
+          <h3>Order Summary</h3>
+          <p class="mb-2">Price can change depending on shipping method and taxes of your state.</p>
+        </div>
+
+        <div class="products-in-basket mb-4 pb-2 d-flex flex-column">
+          <div class="product">
+            <app-basket-product></app-basket-product>
+          </div>
+          <div class="product">
+            <app-basket-product></app-basket-product>
+          </div>
+        </div>
+
+        <div class="mb-4 pb-2 d-flex flex-column order-details">
+          <div class="mb-4">
+            <div class="d-flex flex-row justify-content-between mb-2">
+              <h6 class="payment-name">Subtotal</h6>
+              <h6 class="payment-price">73.98 USD</h6>
+            </div>
+            <div class="d-flex flex-row justify-content-between mb-2">
+              <h6 class="payment-name">Tax</h6>
+              <h6 class="payment-price">17% 16.53 USD</h6>
+            </div>
+            <div class="d-flex flex-row justify-content-between mb-2">
+              <h6 class="payment-name">Shipping</h6>
+              <h6 class="payment-price">0 USD</h6>
+            </div>
+          </div>
+          <div class="apply-promo-code">
+            <div class="input-group search py-1 px-2 d-flex flex-row align-items-center">
+              <input type="text" class="form-control border-0 p-0" placeholder="Apply promo code">
+              <div class="input-group-append">
+                <button class="btn" type="button" id="button-addon2">
+                  Apply now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="total-order d-flex flex-row justify-content-between">
+          <div class="total-order-caption d-flex flex-column">
+            <h6 class="mb-0">
+              Total Order
+            </h6>
+            <p class="mb-0">
+              Guaranteed delivery day:  June 12, 2020
+            </p>
+          </div>
+
+          <h2 class="mb-0 my-auto">
+            89.84 USD
+          </h2>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

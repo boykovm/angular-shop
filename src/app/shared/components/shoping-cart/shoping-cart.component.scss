@@ -1,0 +1,59 @@
+@import "../../../../styles";
+
+.head-line {
+  h2 {
+    color: $color-1-a;
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+  }
+}
+
+button {
+  p {
+    color: $color-1-d;
+    font-size: map-get($caption, font-size);
+    font-weight: map-get($caption, font-weight);
+    font-family: map-get($caption, font-family);
+  }
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.products {
+  overflow-y: auto;
+  height: calc(100% - 45px - 215px)
+}
+
+.conclusion {
+  position: absolute;
+  bottom: 0;
+  .head-line {
+    h2, h6 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+  }
+
+  button {
+    font-family: map-get($button, button-default);
+    font-weight: map-get($button, font-weight);
+    font-size: map-get($button, font-size);
+
+    &.continue {
+      color: $color-1-a;
+      padding: 0 12px;
+    }
+
+    &.to-checkout {
+      color: $color-1-j;
+      background: $color-2-a;
+      border: 2px solid $color-2-b;
+      border-radius: 12px;
+      padding: 13px 16px;
+    }
+  }
+}

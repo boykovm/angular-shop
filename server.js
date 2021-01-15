@@ -1,16 +1,42 @@
 //Install express server
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose')
 
 const app = express();
+const port = process.env.PORT || 8080;
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/angular-shop'));
+// app.use(express.static(path.join(__dirname, 'src')));
+//
 
-app.get('/*', function(req,res) {
+if (port == 8080) {
+  app.get('/', (req, res) => {
+    // res.sendFile(path.join(__dirname + 'src/index.html'));
+    res.send('lol')
+  });
+} else {
+  app.use(express.static(__dirname + '/dist/angular-shop'));
 
-  res.sendFile(path.join(__dirname+'/dist/angular-shop/index.html'));
+  app.get('/*', function(req,res) {
+
+    res.sendFile(path.join(__dirname+'/dist/angular-shop/index.html'));
+  });
+}
+
+async function start() {
+  try {
+    await mongoose.connect(`mongodb+srv://admin:admin@angular-shop.ge78n.mongodb.net/angular-shop?retryWrites=true&w=majority`, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+      useFindAndModify: false
+    })
+  } catch (e) {
+    console.log(e)
+  }
+}
+
+app.listen(port, () => {
+  console.log('Server was started on port:', port)
 });
 
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+start();

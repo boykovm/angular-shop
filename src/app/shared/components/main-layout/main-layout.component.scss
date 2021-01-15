@@ -1,0 +1,11 @@
+@import "../../../../styles";
+
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  border-left: 1px solid $color-1-e;
+  z-index: 2000;
+}

@@ -1,0 +1,98 @@
+@import "../../../../styles";
+
+.col-3 {
+  .image {
+
+  }
+
+  .checkout-process {
+    img {
+      width: 12px;
+      height: 12px;
+    }
+
+    p {
+      color: $color-1-c;
+      font-size: map-get($caption, font-size);
+      font-weight: map-get($caption, font-weight);
+      font-family: map-get($caption, font-family);
+    }
+  }
+}
+
+.col-9 {
+  .product-title {
+    .name {
+
+    }
+
+    .basket-description {
+      p {
+        color: $color-1-c;
+        font-size: map-get($caption, font-size);
+        font-weight: map-get($caption, font-weight);
+        font-family: map-get($caption, font-family);
+      }
+
+      .category-description {
+        p {
+          color: $color-1-a;
+          font-size: map-get($caption, font-size);
+          font-weight: map-get($caption, font-weight);
+          font-family: map-get($caption, font-family);
+        }
+      }
+    }
+
+    .stars {
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .price-settings {
+      .price {
+        h4 {
+          color: $color-2-a;
+          font-family: $default-font;
+          font-weight: $default-font-weight;
+        }
+
+        h6 {
+          color: $color-1-c;
+          font-family: $default-font;
+          font-weight: $default-font-weight;
+          text-decoration: line-through;
+        }
+      }
+
+      .cart-settings {
+        border-radius: 12px;
+        border: 1px solid $color-1-d;
+        background: $color-1-h;
+        padding: 6px;
+
+        .package-type {
+          background: none;
+
+          label {
+            font-family: map-get($body, body-default);
+            font-size: map-get($body, font-size);
+            font-weight: map-get($body, font-weight);
+            border-right: 1px solid $color-1-d;
+          }
+
+          select {
+            background: none;
+            border: none;
+            font-family: $default-font;
+            font-weight: $default-font-weight;
+            font-size: $default-font-size;
+            color: $color-1-a;
+          }
+        }
+      }
+    }
+  }
+}

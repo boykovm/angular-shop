@@ -1,0 +1,213 @@
+@import "../../../../styles";
+
+.billing {
+  .head-line {
+    h3 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+
+    .subtitle {
+      p {
+        color: $color-1-c;
+        font-size: map-get($caption, font-size);
+        font-weight: map-get($caption, font-weight);
+        font-family: map-get($caption, font-family);
+      }
+    }
+  }
+
+  .step-1 {
+    h6 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+
+    input {
+      border: 1px solid $color-1-d;
+      border-radius: 12px;
+      background: $color-1-h;
+      color: $color-1-c;
+      font-family: map-get($body, body-default);
+      font-size: map-get($body, font-size);
+      font-weight: map-get($body, font-weight);
+    }
+  }
+
+  .step-2 {
+    .fedex {
+      border-radius: 12px;
+      border: 1px solid $color-1-d;
+    }
+  }
+
+  .step-3 {
+
+  }
+
+  .step-4 {
+    .order-notes {
+      h6 {
+        color: $color-1-a;
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+      }
+
+      textarea {
+        border-radius: 12px;
+        border: 1px solid $color-1-d;
+        background: $color-1-h;
+        color: $color-1-c;
+        font-family: map-get($body, body-default);
+        font-size: map-get($body, font-size);
+        font-weight: map-get($body, font-weight);
+        min-height: 100px;
+      }
+    }
+  }
+
+  .step-5 {
+    .check-agree {
+      .form-check {
+        border-radius: 12px;
+        border: 1px solid $color-1-d;
+        background: $color-1-h;
+
+        input {
+          width: 24px;
+          height: 24px;
+        }
+
+        label {
+          color: $color-1-a;
+          font-family: map-get($body, body-default);
+          font-size: map-get($body, font-size);
+          font-weight: map-get($body, font-weight);
+
+          a{
+            color: $color-1-a;
+            text-decoration: $underline;
+          }
+        }
+      }
+    }
+
+    button {
+      color: $color-1-j;
+      background: $color-2-a ;
+      border: 2px solid $color-2-b;
+      border-radius: 12px;
+      font-family: map-get($button, button-default);
+      font-weight: map-get($button, font-weight);
+      font-size: map-get($button, font-size);
+      box-sizing: border-box;
+    }
+
+    .safe {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      h6 {
+        color: $color-1-a;
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+      }
+
+      p {
+        color: $color-1-c;
+        font-size: map-get($caption, font-size);
+        font-weight: map-get($caption, font-weight);
+        font-family: map-get($caption, font-family);
+      }
+    }
+  }
+}
+
+.basket {
+  border: 1px solid $color-1-d;
+  border-radius: 12px;
+  background: $color-1-j;
+
+  .head-line {
+    h3 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+
+    p {
+      color: $color-1-c;
+      font-size: map-get($caption, font-size);
+      font-weight: map-get($caption, font-weight);
+      font-family: map-get($caption, font-family);
+    }
+  }
+
+  .order-details {
+    h6 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+
+    }
+
+    .apply-promo-code {
+      .input-group.search {
+        border-radius: 12px;
+        border: 1px solid $color-1-d;
+        background: $color-1-h;
+
+        input {
+          background: none;
+          color: $color-1-c;
+          font-family: map-get($body, body-default);
+          font-size: map-get($body, font-size);
+          font-weight: map-get($body, font-weight);
+        }
+
+        .input-group-append {
+          background: none;
+
+          button {
+            background: none;
+            color: $color-1-a;
+            font-family: map-get($button, button-default);
+            font-weight: map-get($button, font-weight);
+            font-size: map-get($button, font-size);
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+  .total-order {
+    .total-order-caption {
+      h6 {
+        color: $color-1-a;
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+      }
+
+      p {
+        color: $color-2-a;
+        font-family: map-get($caption, font-family);
+        font-size: map-get($caption, font-size);
+        font-weight: map-get($caption, font-weight);
+      }
+    }
+
+    h2 {
+      color: $color-2-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+  }
+}
+

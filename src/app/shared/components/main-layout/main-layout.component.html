@@ -40,16 +40,18 @@
         </div>
       </div>
 
-      <div class="user-cart col-1 d-flex flex-row justify-content-between">
+      <div class="user-cart col-1 d-flex flex-row justify-content-between align-items-center">
         <a href="/" class="d-block"><img src="./assets/images/icons/ic-actions-user.svg" alt="Account"></a>
-        <a href="/" class="d-block"><img src="./assets/images/icons/ic-ecommerce-basket.svg" alt="Cart"></a>
+        <button class="d-block btn" (click)="cartSwitch()">
+          <img src="./assets/images/icons/ic-ecommerce-basket.svg" alt="Cart">
+        </button>
       </div>
     </div>
 
   </div>
 
   <div class="container d-flex flex-row header-menu px-0 py-3">
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Bakery
       </a>
@@ -61,7 +63,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Fruit and vegetables
       </a>
@@ -73,7 +75,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Meat and fish
       </a>
@@ -85,7 +87,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Drinks
       </a>
@@ -97,7 +99,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Kitchen
       </a>
@@ -109,7 +111,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Special nutrition
       </a>
@@ -121,7 +123,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Baby
       </a>
@@ -133,7 +135,7 @@
       </div>
     </div>
 
-    <div class="dropdown float-left ml-4 pl-1">
+    <div class="dropdown float-left ml-3 pl-1">
       <a class="btn dropdown-toggle border-0 pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Pharmacy
       </a>
@@ -220,6 +222,7 @@
 
 
 <!--<footer *ngIf="title != 'checkout'; else checkoutfooter" class="container container-fluid d-flex flex-column pt-5">-->
+<!--<footer *ngIf="notCheckout; else checkoutfooter" class="container container-fluid d-flex flex-column pt-5">-->
 <!--  <div class="container-fluid d-flex flex-row pt-3">-->
 <!--    <div class="col-3 get-in-touch">-->
 <!--      <h4 class="footer-head">Get in touch</h4>-->
@@ -286,3 +289,9 @@
 <!--<ng-template #checkoutfooter>-->
 <!--  lol-->
 <!--</ng-template>-->
+
+<div class="cart px-3 pt-4 pb-3" *ngIf="cartOpened">
+  <app-shoping-cart
+    (closeCart)="closeCart($event)"
+  ></app-shoping-cart>
+</div>
