@@ -136,7 +136,7 @@
           <div class="d-flex flex-column payment-type mb-3">
             <div class="form-check px-3 py-2 d-flex flex-row justify-content-between">
               <div class="d-flex flex-row payment-name">
-                <input class="form-check-input ml-n2" type="radio" name="payment" id="card" value="card" checked>
+                <input class="form-check-input ml-n2" type="radio" name="payment" id="card" value="card" checked (click)="this.payment_type = 'card'">
                 <h6 class="form-check-label ml-3 my-auto" for="card">
                   Credit card
                 </h6>
@@ -144,21 +144,37 @@
 
               <img src="./assets/images/icons/visaormastercard.png" alt="Visa or MasterCard">
             </div>
-
-            <div class="container-fluid px-2 pt-3 mb-3 d-flex flex-column">
+             <div *ngIf="payment_type == 'card'" class="container-fluid px-2 pt-3 my-4 d-flex flex-column card-info">
               <div class="col d-flex flex-column card-number px-0">
-                <h6 class="mb-0">First name</h6>
-                <input type="text" placeholder="First name" class="py-1 px-2">
+                <h6 class="mb-0">Card number</h6>
+                <input type="text" placeholder="Card number" class="py-1 px-2">
               </div>
 
-<!--              .d-flex.flex-row-->
+              <div class="d-flex flex-row mt-4 justify-content-between">
+                <div class="col-6 d-flex flex-column card-number px-0">
+                  <h6 class="mb-0">Card Holder</h6>
+                  <input type="text" placeholder="Card Holder" class="py-1 px-2">
+                </div>
+
+                <div class="col-6 d-flex flex-row justify-content-between pr-0 pl-5">
+                  <div class="d-flex flex-column card-number px-0 secret-information">
+                    <h6 class="mb-0">Expiration date</h6>
+                    <input type="text" placeholder="MM/YY" class="py-1 px-2">
+                  </div>
+
+                  <div class="d-flex flex-column card-number px-0 secret-information">
+                    <h6 class="mb-0">CVV2</h6>
+                    <input type="password" placeholder="CVV2" class="py-1 px-2">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="form-check payment-type px-3 py-2 d-flex flex-row justify-content-between mb-3">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row payment-name">
-                <input class="form-check-input ml-n2" type="radio" name="payment" id="paypal" value="paypal">
+                <input class="form-check-input ml-n2" type="radio" name="payment" id="paypal" value="paypal" (click)="this.payment_type='paypal'">
                 <h6 class="form-check-label ml-3 my-auto" for="paypal">
                   PayPal
                 </h6>
@@ -169,7 +185,7 @@
           </div>
           <div class="form-check payment-type px-3 py-2 d-flex flex-row justify-content-between mb-3">
             <div class="d-flex flex-row payment-name">
-              <input class="form-check-input ml-n2 my-auto" type="radio" name="payment" id="bitcoin" value="bitcoin">
+              <input class="form-check-input ml-n2 my-auto" type="radio" name="payment" id="bitcoin" value="bitcoin" (click)="payment_type='bitcoin'">
               <h6 class="form-check-label ml-3 my-auto" for="bitcoin">
                 Bitcoin
               </h6>

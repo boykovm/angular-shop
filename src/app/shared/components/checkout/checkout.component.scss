@@ -90,6 +90,28 @@
             font-weight: $default-font-weight;
           }
         }
+
+        .card-info {
+          h6 {
+            color: $color-1-a;
+            font-family: $default-font;
+            font-weight: $default-font-weight;
+          }
+
+          input {
+            border: 1px solid $color-1-d;
+            border-radius: 12px;
+            background: $color-1-h;
+            color: $color-1-c;
+            font-family: map-get($body, body-default);
+            font-size: map-get($body, font-size);
+            font-weight: map-get($body, font-weight);
+          }
+
+          .secret-information {
+            width: 120px;
+          }
+        }
       }
     }
   }
