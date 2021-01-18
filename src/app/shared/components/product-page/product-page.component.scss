@@ -166,7 +166,56 @@
   }
 
   .full-info {
-//there
+    ul {
+      &.nav-tabs {
+        border-bottom-color: $color-1-f;
+      }
+
+      li {
+        a {
+          color: $color-1-a;
+
+          &.nav-link {
+            border-color: $color-1-i $color-1-i $color-1-f;
+
+            &.active {
+              border-bottom-color: $color-2-a;
+            }
+          }
+
+          h4 {
+            color: $color-1-a;
+            font-family: $default-font;
+            font-weight: $default-font-weight;
+          }
+
+          h6 {
+            background: $color-2-e;
+            color: $color-2-a;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+
+    .full-description {
+      h5, h6 {
+        color: $color-1-a;
+        font-family: $default-font;
+        font-weight: $default-font-weight;
+      }
+
+      p {
+        color: $color-1-a;
+        font-family: map-get($body, body-default);
+        font-size: map-get($body, font-size);
+        font-weight: map-get($body, font-weight);
+      }
+
+      .headline {
+        border-bottom: 1px solid $color-1-e;
+      }
+    }
   }
 }
 

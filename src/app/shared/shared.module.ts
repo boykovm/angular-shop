@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
-import {AppRoutingModule} from '../app-routing.module';
 import { ShopingCartComponent } from './components/shoping-cart/shoping-cart.component';
 import { BasketProductComponent } from './components/basket-product/basket-product.component';
 import { LeftMenuComponent } from './components/left-menu/left-menu.component';
@@ -14,6 +13,7 @@ import {CategoryMenuComponent} from './components/category-menu/category-menu.co
 import {PathToPageComponent} from './components/path-to-page/path-to-page.component';
 import {ProductPageComponent} from './components/product-page/product-page.component';
 import {CheckoutComponent} from './components/checkout/checkout.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,17 @@ import {CheckoutComponent} from './components/checkout/checkout.component';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule,
+    RouterModule.forChild([
+      {
+        path: '', component: MainLayoutComponent, children: [
+          {path: '', redirectTo: '/', pathMatch: 'full'},
+          {path: '', component: MainPageComponent},
+          {path: 'category', component: CategoryComponent},
+          {path: 'category/product', component: ProductPageComponent},
+          {path: 'checkout', component: CheckoutComponent},
+        ]
+      }
+    ])
   ]
 })
 export class SharedModule { }

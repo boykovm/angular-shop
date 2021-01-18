@@ -37,14 +37,61 @@
   }
 
   .step-2 {
-    .fedex {
+    .delivery-name {
       border-radius: 12px;
       border: 1px solid $color-1-d;
+
+      .input-name {
+        h6 {
+          color: $color-1-a;
+          font-family: $default-font;
+          font-weight: $default-font-weight;
+        }
+      }
+
+      .adding-price {
+        h6 {
+          font-family: $default-font;
+          font-weight: $default-font-weight;
+
+          &.added-price {
+            color: $color-2-a;
+          }
+
+          &.added-sub {
+            color: $color-1-a;
+            background: $color-1-f;
+            border-radius: 12px;
+            padding: 0 8px;
+          }
+        }
+      }
     }
   }
 
   .step-3 {
+    .payment-info {
+      .payment-type {
+        border-radius: 12px;
+        border: 1px solid $color-1-d;
 
+        div {
+          background: none;
+        }
+
+        .payment-name {
+          input {
+            margin-top: 2.5px;
+          }
+
+          h6 {
+            color: $color-1-a;
+            font-family: $default-font;
+            font-weight: $default-font-weight;
+          }
+        }
+      }
+    }
   }
 
   .step-4 {

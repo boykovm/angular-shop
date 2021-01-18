@@ -76,21 +76,46 @@
           </div>
         </div>
 
-<!--        toggle-->
         <div class="deliver-information mb-4 d-flex flex-column step-2">
-          <div class="form-check fedex px-3 py-2 d-flex flex-row justify-content-between">
-              <input class="form-check-input ml-n2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label ml-1" for="exampleRadios1">
+          <div class="form-check delivery-name px-3 py-2 d-flex flex-row justify-content-between mb-3">
+            <div class="d-flex flex-row input-name">
+              <input class="form-check-input ml-n2 my-auto" type="radio" name="delivery" id="delivery1" value="FedEx" checked>
+              <h6 class="form-check-label ml-3 my-auto" for="delivery1">
                 FedEx
-              </label>
-          </div>
-          <div class="form-check">
-            <div class="dhl">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Second default radio
-              </label>
+              </h6>
             </div>
+
+            <div class="d-flex flex-row adding-price my-auto">
+              <h6 class="added-price mb-0">
+                +32 USD
+              </h6>
+
+              <h6 class="added-sub mb-0 ml-1">
+                Additional price
+              </h6>
+            </div>
+
+            <img src="./assets/images/icons/fedex.png" alt="FedEx">
+          </div>
+          <div class="form-check delivery-name px-3 py-2 d-flex flex-row justify-content-between">
+            <div class="d-flex flex-row input-name">
+              <input class="form-check-input ml-n2 my-auto" type="radio" name="delivery" id="DHL" value="DHL">
+              <h6 class="form-check-label ml-3 my-auto" for="DHL">
+                DHL
+              </h6>
+            </div>
+
+            <div class="d-flex flex-row adding-price my-auto">
+              <h6 class="added-price mb-0">
+                +15 USD
+              </h6>
+
+              <h6 class="added-sub mb-0 ml-1">
+                Additional price
+              </h6>
+            </div>
+
+            <img src="./assets/images/icons/dhl.png" alt="DHL">
           </div>
         </div>
       </div>
@@ -104,6 +129,53 @@
           <div class="subtitle d-flex flex-row justify-content-between">
             <p class="mb-0">Please enter your payment method</p>
             <p class="mb-0">Step 3 of 5</p>
+          </div>
+        </div>
+
+        <div class="payment-info mb-4 d-flex flex-column">
+          <div class="d-flex flex-column payment-type mb-3">
+            <div class="form-check px-3 py-2 d-flex flex-row justify-content-between">
+              <div class="d-flex flex-row payment-name">
+                <input class="form-check-input ml-n2" type="radio" name="payment" id="card" value="card" checked>
+                <h6 class="form-check-label ml-3 my-auto" for="card">
+                  Credit card
+                </h6>
+              </div>
+
+              <img src="./assets/images/icons/visaormastercard.png" alt="Visa or MasterCard">
+            </div>
+
+            <div class="container-fluid px-2 pt-3 mb-3 d-flex flex-column">
+              <div class="col d-flex flex-column card-number px-0">
+                <h6 class="mb-0">First name</h6>
+                <input type="text" placeholder="First name" class="py-1 px-2">
+              </div>
+
+<!--              .d-flex.flex-row-->
+            </div>
+          </div>
+
+          <div class="form-check payment-type px-3 py-2 d-flex flex-row justify-content-between mb-3">
+            <div class="d-flex flex-row justify-content-between">
+              <div class="d-flex flex-row payment-name">
+                <input class="form-check-input ml-n2" type="radio" name="payment" id="paypal" value="paypal">
+                <h6 class="form-check-label ml-3 my-auto" for="paypal">
+                  PayPal
+                </h6>
+              </div>
+            </div>
+
+            <img src="./assets/images/icons/paypal.png" alt="PayPal">
+          </div>
+          <div class="form-check payment-type px-3 py-2 d-flex flex-row justify-content-between mb-3">
+            <div class="d-flex flex-row payment-name">
+              <input class="form-check-input ml-n2 my-auto" type="radio" name="payment" id="bitcoin" value="bitcoin">
+              <h6 class="form-check-label ml-3 my-auto" for="bitcoin">
+                Bitcoin
+              </h6>
+            </div>
+
+            <img src="./assets/images/icons/bitcoin.png" alt="Bitcoin">
           </div>
         </div>
       </div>
