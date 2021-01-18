@@ -1,0 +1,48 @@
+@import "../../../../styles";
+
+.login {
+  background: $color-1-j;
+  border: 2px solid $color-1-d;
+  border-radius: 12px;
+
+  .head-line {
+    h3 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+  }
+
+  .admin-login {
+    h6 {
+      color: $color-1-a;
+      font-family: $default-font;
+      font-weight: $default-font-weight;
+    }
+
+    input {
+      border: 1px solid $color-1-d;
+      border-radius: 12px;
+      background: $color-1-h;
+      color: $color-1-c;
+      font-family: map-get($body, body-default);
+      font-size: map-get($body, font-size);
+      font-weight: map-get($body, font-weight);
+    }
+
+    .forgot {
+      a {
+        color: $color-1-d;
+        text-decoration: $underline;
+        font-family: $default-font;
+        font-size: $default-font-size;
+        font-weight: $default-font-weight;
+
+
+        &:hover {
+          color: $color-1-c;
+        }
+      }
+    }
+  }
+}
