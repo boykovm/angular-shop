@@ -1,0 +1,21 @@
+<div class="container-fluid px-0 pb-5">
+  <div class="container px-0 d-flex flex-row justify-content-between">
+    <div>
+      <h1>Admin Panel</h1>
+    </div>
+    <div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin', 'dashboard']" [routerLinkActive]="'active'">Statistic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin', 'add']" [routerLinkActive]="'active'">Add product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin', 'orders']" [routerLinkActive]="'active'">Orders</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,13 @@
+@import "../../../../styles";
+
+h4 {
+  font-family: $default-font;
+  font-weight: $default-font-weight;
+
+  a {
+    color: $color-1-a;
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+    text-decoration: none;
+  }
+}

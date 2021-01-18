@@ -1,0 +1,11 @@
+@import "../../../../styles";
+
+.nav {
+  a {
+    color: $color-1-a;
+
+    &.active {
+      background: rgba(0, 0, 0, 0.075);
+    }
+  }
+}
