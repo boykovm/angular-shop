@@ -1,6 +1,6 @@
 @import "../../../../styles";
 
-.login {
+.signup {
   background: $color-1-j;
   border: 2px solid $color-1-d;
   border-radius: 12px;
@@ -13,7 +13,7 @@
     }
   }
 
-  .admin-login {
+  .admin-signup {
     h6 {
       color: $color-1-a;
       font-family: $default-font;
@@ -30,7 +30,7 @@
       font-weight: map-get($body, font-weight);
     }
 
-    .forgot {
+    .have-account {
       a {
         color: $color-1-d;
         text-decoration: $underline;

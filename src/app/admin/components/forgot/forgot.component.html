@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <div class="container d-flex flex-column align-items-center">
-    <div class="login d-flex flex-column align-items-center col-6 pt-3">
+    <div class="remember d-flex flex-column align-items-center col-6 pt-3">
       <div class="container-fluid head-line px-3 pt-2 d-flex flex-row mb-3">
-        <h3 class="mb-0">Login to administration</h3>
+        <h3 class="mb-0">Remember password</h3>
       </div>
 
-      <div class="container-fluid px-2 my-4 d-flex flex-column admin-login align-items-center">
+      <div class="container-fluid px-2 my-4 d-flex flex-column admin-forgot align-items-center">
         <div class="col d-flex flex-column username px-2 mb-3">
           <h6 class="mb-0">
             Username or e-mail
@@ -13,23 +13,13 @@
           <input type="text" placeholder="Username or e-mail" name="username" class="py-1 px-2">
         </div>
 
-        <div class="col d-flex flex-column password px-2 mb-3">
-          <h6 class="mb-0">
-            Password
-          </h6>
-          <input type="password" placeholder="Password" name="password" class="py-1 px-2">
-        </div>
-
-        <div class="container-fluid d-flex flex-row-reverse mb-3 forgot">
-          <a [routerLink]="['/admin', 'forgot']">Forgot password ?</a>
-        </div>
-
         <div class="col-10 d-flex flex-row mb-3 buttons justify-content-around">
-          <button class="btn px-4 py-2" (click)="login()">Login</button>
+          <button class="btn px-4 py-2" >Remember password</button>
         </div>
 
         <div class="container-fluid d-flex flex-row-reverse mb-3 forgot">
           <a [routerLink]="['/admin', 'signup']">Sign-Up</a>
+          <a [routerLink]="['/admin', 'login']" class="mr-3">Login</a>
         </div>
       </div>
     </div>

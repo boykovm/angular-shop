@@ -1,6 +1,6 @@
 @import "../../../../styles";
 
-.login {
+.remember {
   background: $color-1-j;
   border: 2px solid $color-1-d;
   border-radius: 12px;
@@ -13,7 +13,7 @@
     }
   }
 
-  .admin-login {
+  .admin-forgot {
     h6 {
       color: $color-1-a;
       font-family: $default-font;
@@ -53,7 +53,6 @@
         font-weight: map-get($button, font-weight);
         font-size: map-get($button, font-size);
 
-        width: 150px;
       }
     }
   }

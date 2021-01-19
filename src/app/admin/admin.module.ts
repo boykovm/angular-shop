@@ -8,6 +8,8 @@ import { AdminHeaderComponent } from './components/admin-header/admin-header.com
 import { AdminFooterComponent } from './components/admin-footer/admin-footer.component';
 import { AdminOrdersComponent } from './components/admin-orders/admin-orders.component';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ForgotComponent } from './components/forgot/forgot.component';
 
 
 
@@ -19,7 +21,9 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
     AdminHeaderComponent,
     AdminFooterComponent,
     AdminOrdersComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    SignupComponent,
+    ForgotComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +32,8 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
         path: '', component: AdminLayoutComponent, children: [
           {path: '', redirectTo: '/admin/login', pathMatch: 'full'},
           {path: 'login', component: AdminLoginComponent},
+          {path: 'signup', component: SignupComponent},
+          {path: 'forgot', component: ForgotComponent},
           {path: 'dashboard', component: AdminMainPageComponent},
           {path: 'add', component: AdminAddProductComponent},
           {path: 'orders', component: AdminOrdersComponent},
