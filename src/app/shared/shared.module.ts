@@ -43,7 +43,7 @@ import {RouterModule} from '@angular/router';
           {path: 'checkout', component: CheckoutComponent},
         ]
       }
-    ])
+    ]),
   ]
 })
 export class SharedModule { }

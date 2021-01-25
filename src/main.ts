@@ -9,7 +9,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-console.log('lol');
+// console.log('lol');
 
 // async function s() {
 //   try {

@@ -1,1 +1,66 @@
-<p>admin-add-product works!</p>
+<div class="container d-flex.flex-column">
+  <form [formGroup]="form" (ngSubmit)="addProduct()" class="d-flex flex-column align-items-center">
+    <div class="col d-flex flex-column category px-2 mb-3">
+      <h6 class="mb-0">
+        Category
+      </h6>
+      <select class="form-control py-1 px-2" id="exampleFormControlSelect1" name="category" formControlName="category">
+        <option>Bakery</option>
+        <option>Fruit and vegetables</option>
+        <option>Meat and fish</option>
+        <option>Drinks</option>
+        <option>Kitchen</option>
+        <option>Special nutrition</option>
+        <option>Baby</option>
+        <option>Pharmacy</option>
+      </select>
+    </div>
+
+    <div class="col d-flex flex-column password px-2 mb-3">
+      <h6 class="mb-0">
+        Product Name
+      </h6>
+      <input type="text" placeholder="Name" name="productName" class="py-1 px-2" formControlName="productName" >
+    </div>
+
+    <div class="col d-flex flex-column password px-2 mb-3">
+      <h6 class="mb-0">
+        Price
+      </h6>
+      <input type="text" placeholder="Price" name="price" class="py-1 px-2" formControlName="price" >
+    </div>
+
+    <div class="col d-flex flex-column password px-2 mb-3">
+      <h6 class="mb-0">
+        Short description
+      </h6>
+      <textarea type="text" name="shortDescription" formControlName="shortDescription" placeholder="Short description"></textarea>
+    </div>
+
+    <div class="col d-flex flex-column password px-2 mb-3">
+      <h6 class="mb-0">
+        Full description
+      </h6>
+      <textarea type="text" name="Full description" formControlName="fullDescription" placeholder="Full description"></textarea>
+    </div>
+
+    <div class="col d-flex flex-column image-input form-group" *ngFor="let img of this.images; let idx = index">
+      <h6 class="mb-0">
+        Add image
+      </h6>
+      <input
+        type="file"
+        class="form-control-file"
+        name="img{{idx}}"
+        id="img{{idx}}"
+        (change)="addImage($event.target)"
+      >
+<!--      <input type="button" (click)="fvs()" value="lol">-->
+    </div>
+
+    <button
+      type="submit"
+      class="btn py-2 px-3 mb-3"
+    >Add product</button>
+  </form>
+</div>

@@ -10,6 +10,9 @@ import { AdminOrdersComponent } from './components/admin-orders/admin-orders.com
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ForgotComponent } from './components/forgot/forgot.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { ProductAddService } from './shared/services/product-add.service';
 
 
 
@@ -23,10 +26,12 @@ import { ForgotComponent } from './components/forgot/forgot.component';
     AdminOrdersComponent,
     AdminLoginComponent,
     SignupComponent,
-    ForgotComponent
+    ForgotComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild([
       {
         path: '', component: AdminLayoutComponent, children: [
@@ -40,6 +45,12 @@ import { ForgotComponent } from './components/forgot/forgot.component';
         ]
       }
     ]),
+    HttpClientModule
+  ],
+  exports: [
+  ],
+  providers: [
+    ProductAddService
   ]
 })
 export class AdminModule { }

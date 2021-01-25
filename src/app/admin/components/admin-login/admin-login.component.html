@@ -5,19 +5,19 @@
         <h3 class="mb-0">Login to administration</h3>
       </div>
 
-      <div class="container-fluid px-2 my-4 d-flex flex-column admin-login align-items-center">
+      <div [formGroup]="form" (ngSubmit)="login()" class="container-fluid px-2 my-4 d-flex flex-column admin-login align-items-center">
         <div class="col d-flex flex-column username px-2 mb-3">
           <h6 class="mb-0">
-            Username or e-mail
+            Username
           </h6>
-          <input type="text" placeholder="Username or e-mail" name="username" class="py-1 px-2">
+          <input type="text" placeholder="Username" name="username" class="py-1 px-2" formControlName="username">
         </div>
 
         <div class="col d-flex flex-column password px-2 mb-3">
           <h6 class="mb-0">
             Password
           </h6>
-          <input type="password" placeholder="Password" name="password" class="py-1 px-2">
+          <input type="password" placeholder="Password" name="password" class="py-1 px-2" formControlName="password">
         </div>
 
         <div class="container-fluid d-flex flex-row-reverse mb-3 forgot">

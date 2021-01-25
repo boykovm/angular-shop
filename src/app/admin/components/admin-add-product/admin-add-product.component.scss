@@ -1,0 +1,34 @@
+@import "../../../../styles";
+
+form {
+  h6 {
+    color: $color-1-a;
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+  }
+
+  textarea, input {
+    border: 1px solid $color-1-d;
+    border-radius: 12px;
+    background: $color-1-h;
+    color: $color-1-c;
+    font-family: map-get($body, body-default);
+    font-size: map-get($body, font-size);
+    font-weight: map-get($body, font-weight);
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  button {
+    color: $color-1-a;
+    background: $color-1-j ;
+    border: 2px solid $color-1-e;
+    border-radius: 12px;
+    font-family: map-get($button, button-default);
+    font-weight: map-get($button, font-weight);
+    font-size: map-get($button, font-size);
+    box-sizing: border-box;
+  }
+}
